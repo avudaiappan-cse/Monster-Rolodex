@@ -1,0 +1,27 @@
+.card {
+  border: 2px solid #fefbe7;
+  background-color: #e8f9e9;
+  color: #393e46;
+  border-radius: 6px;
+  width: 25%;
+  height: auto;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #e8f9e9;
+}
+
+@media only screen and (max-width: 654px) {
+  .card {
+    width: 100%;
+  }
+}

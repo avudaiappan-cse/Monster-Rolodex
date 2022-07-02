@@ -1,38 +1,55 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  width: 70%;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-size: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button {
+  font-family: "Source Code Pro", monospace;
+  padding: 0.5rem 1rem;
+  background-color: #82a284;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  color: black;
+  border-bottom: 3px solid white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+button:hover {
+  border-bottom: 10px solid white;
+}
+
+.card__container {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.input__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 654px) {
+  .input__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .card__container {
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
