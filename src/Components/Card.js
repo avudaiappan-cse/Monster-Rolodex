@@ -10,6 +10,8 @@ const Card = ({ name, email }) => {
     </div>
   );
 };
+
+// Class Component _old
 // class Card extends Component {
 //   render() {
 //     const { name, email } = this.props;
